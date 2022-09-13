@@ -1,3 +1,3 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-Zadanie domowe 5
+Zadanie domowe 6
