@@ -482,7 +482,13 @@
         <div>
           <form class="sign-ip-footer">
             <label for="sign-up">Zapisz się do newslettera</label>
-            <input type="email" placeholder="E-mail" id="sign-up" />
+            <input
+              class="footer-email-input"
+              type="email"
+              placeholder="E-mail"
+              id="sign-up"
+              name="sign-up"
+            />
             <button type="submit">
               <div class="btn-sign-up">
                 <p>Zapisz się</p>
@@ -505,36 +511,43 @@
               <svg class="icon-modal" width="12" height="12">
                 <use href="./images/icons.svg#icon-username"></use>
               </svg>
-              Imie</label
-            >
-            <input class="input-modal" type="text" id="name" />
+              Imie
+              <input class="input-modal" type="text" id="name" name="register"
+            /></label>
+
             <label class="label-modal" for="tel">
               <svg class="icon-modal" width="13" height="13">
                 <use href="./images/icons.svg#icon-Vector1"></use></svg
-              >Telefon</label
-            >
-            <input class="input-modal" type="tel" id="tel" />
+              >Telefon
+              <input class="input-modal" type="tel" id="tel" name="register"
+            /></label>
+
             <label class="label-modal" for="mail">
               <svg class="icon-modal" width="15" height="12">
                 <use href="./images/icons.svg#icon-Vector2"></use></svg
-              >Email</label
-            >
-            <input class="input-modal" type="email" id="mail" />
+              >Email
+              <input class="input-modal" type="email" id="mail" name="register"
+            /></label>
+
             <label class="label-modal" for="com">Komentarz</label>
             <textarea
               placeholder="Wprowadź tekst"
               name="com"
               id="com"
             ></textarea>
-            <input
-              class="checkbox-modal"
-              type="checkbox"
-              value="accept"
-              id="check"
-            />
-            <label for="check"
-              >Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label
-            >
+            <div class="div-check">
+              <input
+                name="register"
+                class="checkbox-modal hidden"
+                type="checkbox"
+                value="accept"
+                id="check"
+              />
+              <label for="check"
+                >Oświadczam iż akceptuję Regulamin i Politykę
+                Prywatności.</label
+              >
+            </div>
             <div class="btn-modal"><button type="submit">Wyślij</button></div>
           </form>
         </div>
