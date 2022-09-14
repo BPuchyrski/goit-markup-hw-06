@@ -483,6 +483,7 @@
           <form class="sign-ip-footer">
             <label for="sign-up">Zapisz się do newslettera</label>
             <input
+              required
               class="footer-email-input"
               type="email"
               placeholder="E-mail"
@@ -490,12 +491,12 @@
               name="sign-up"
             />
             <button type="submit">
-              <div class="btn-sign-up">
+              <span class="btn-sign-up">
                 <p>Zapisz się</p>
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
-              </div>
+              </span>
             </button>
           </form>
         </div>
@@ -512,21 +513,36 @@
                 <use href="./images/icons.svg#icon-username"></use>
               </svg>
               Imie
-              <input class="input-modal" type="text" id="name" name="register"
+              <input
+                required
+                class="input-modal"
+                type="text"
+                id="name"
+                name="register"
             /></label>
 
             <label class="label-modal" for="tel">
               <svg class="icon-modal" width="13" height="13">
                 <use href="./images/icons.svg#icon-Vector1"></use></svg
               >Telefon
-              <input class="input-modal" type="tel" id="tel" name="register"
+              <input
+                required
+                class="input-modal"
+                type="tel"
+                id="tel"
+                name="register"
             /></label>
 
             <label class="label-modal" for="mail">
               <svg class="icon-modal" width="15" height="12">
                 <use href="./images/icons.svg#icon-Vector2"></use></svg
               >Email
-              <input class="input-modal" type="email" id="mail" name="register"
+              <input
+                required
+                class="input-modal"
+                type="email"
+                id="mail"
+                name="register"
             /></label>
 
             <label class="label-modal" for="com">Komentarz</label>
@@ -544,9 +560,9 @@
                 id="check"
               />
               <label for="check"
-                >Oświadczam iż akceptuję Regulamin i Politykę
-                Prywatności.</label
-              >
+                >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności.</a>
+              </label>
             </div>
             <div class="btn-modal"><button type="submit">Wyślij</button></div>
           </form>
