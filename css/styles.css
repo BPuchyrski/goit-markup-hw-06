@@ -250,8 +250,11 @@ a.header-nav__link.active-page {
 }
 .sign-ip-footer {
   margin-left: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sign-ip-footer label {
+label[for="sign-up"] {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -260,19 +263,20 @@ a.header-nav__link.active-page {
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 20px;
+  margin-left: 68px;
 }
+
 .btn-sign-up {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn-sign-up p {
-  margin-right: 24px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--white);
   line-height: 1.88;
+}
+.svg-btn {
+  margin-left: 24px;
+  position: relative;
+  top: 5px;
 }
 
 .sign-ip-footer button {
